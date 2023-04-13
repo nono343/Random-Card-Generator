@@ -3,27 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Cartas con JavaScript</title>
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
+
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div
+      id="card"
+      class="container"
+      style="border-radius: 20px; background-color: blanchedalmond; width: 300px; height: 450px;"
+    >
+      <div id="suit-top" style="height: 15%;"></div>
+      <div class="col text-center" style="height:70%;">
+        <p
+          id="cardNumber"
+          style="padding-top:30%; font-size: 80px; font-weight: bold;"
+        ></p>
       </div>
+      <div
+        id="suit-bottom"
+        style="height: 15%; text-align: right; margin-bottom: 50px;"
+      ></div>
     </div>
+    <button
+      type="button"
+      id="change"
+      class="btn btn-warning"
+      style="margin-left: 10px;"
+    >
+      Change
+    </button>
+    <label for="width" style="margin-left: 10px;">Establecer Ancho:</label>
+    <input type="text" id="width" name="width" style="margin-left: 10px;" />
+    <label for="height" style="margin-left: 10px;">Establecer Alto:</label>
+    <input type="text" id="height" name="height" style="margin-left: 10px;" />
+    <script src="app.js"></script>
   </body>
 </html>
